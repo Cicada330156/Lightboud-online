@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<script>
+		//generate HP levels
+		var P1HP = hpdetermine();
+		var P2HP = hpdetermine();
+		var P3HP = hpdetermine();
+		var P4HP = hpdetermine();
+		//hp chart function
+		function hpdetermine(level) {
+			return 25;
+			//add a level chart later
+		};
+		//test hp chart
+		console.log("P1HP: " + P1HP)
+		console.log("P1HP: " + P2HP)
+		console.log("P1HP: " + P3HP)
+		console.log("P1HP: " + P4HP)
+	</script>
+</head>
+<body>
+	<div id = "body">
+		<div id = "P1" style = "float: left; background-color: black; padding: 1%; width: 23%; height: 100%; color: white; font-size: 1vw;">
+			<h1 style = "margin: 0px" align = "center">PLAYER 1</h1>
+			<div>
+				<h3 style = "float: left;">Level&nbsp</h3>
+				<h3 style = "float: left;" id = "P1LV">1</h3><br><br>
+			</div>
+			<div>
+				<h5 align = "center" style = "float: left;">HP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">25</h5>
+				<h5 style = "float: left;" align = "center">/25</h5>
+			</div>
+			<div style = "float: right; margin-right: 55px">
+				<h5 align = "center" style = "float: left;">SP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">15</h5>
+				<h5 style = "float: left;" align = "center">/15</h5>
+			</div>
+			<div style = "float: left; width: 100%;" align = "center">
+				<button type = "button" style = "background-color: black; color: white; width: 15%;">ATTACK</button>
+				<button type = "button" style = "margin-left: 15%; background-color: black; color: white; width: 15%;">HEAL</button>
+				<button type = "button" style = "margin-left: 15%; background-color: black; color: white; width: 15%;">OTHER</button>
+			</div>
+		</div>
+		<div id = "P2" style = "float: left; background-color: pink; padding: 1%; width: 23%; height: 100%; color: black; font-size: 1vw;">
+			<h1 style = "margin: 0px" align = "center">PLAYER 2</h1>
+			<div>
+				<h3 style = "float: left;">Level&nbsp</h3>
+				<h3 style = "float: left;" id = "P2LV">1</h3><br><br>
+			</div>
+			<div>
+				<h5 align = "center" style = "float: left;">HP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">25</h5>
+				<h5 style = "float: left;" align = "center">/25</h5>
+			</div>
+			<div style = "float: right; margin-right: 55px">
+				<h5 align = "center" style = "float: left;">SP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">15</h5>
+				<h5 style = "float: left;" align = "center">/15</h5>
+			</div>
+		</div>
+		<div id = "P3" style = "float: left; background-color: red; padding: 1%; width: 23%; height: 100%; color: black; font-size: 1vw;">
+			<h1 style = "margin: 0px" align = "center">PLAYER 3</h1>
+			<div>
+				<h3 style = "float: left;">Level&nbsp</h3>
+				<h3 style = "float: left;" id = "P3LV">1</h3><br><br>
+			</div>
+			<div>
+				<h5 align = "center" style = "float: left;">HP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">25</h5>
+				<h5 style = "float: left;" align = "center">/25</h5>
+			</div>
+			<div style = "float: right; margin-right: 55px">
+				<h5 align = "center" style = "float: left;">SP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">15</h5>
+				<h5 style = "float: left;" align = "center">/15</h5>
+			</div>
+		</div>
+		<div id = "P4" style = "float: left; background-color: aqua; padding: 1%; width: 23%; height: 100%; color: black; font-size: 1vw;">
+			<h1 style = "margin: 0px" align = "center">PLAYER 4</h1>
+			<div>
+				<h3 style = "float: left;">Level&nbsp</h3>
+				<h3 style = "float: left;" id = "P4LV">1</h3><br><br>
+			</div>
+			<div>
+				<h5 align = "center" style = "float: left;">HP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">25</h5>
+				<h5 style = "float: left;" align = "center">/25</h5>
+			</div>
+			<div style = "float: right; margin-right: 55px">
+				<h5 align = "center" style = "float: left;">SP:&nbsp</h5>
+				<h5 id = "P1HP" align = "center" style = "float: left;">15</h5>
+				<h5 style = "float: left;" align = "center">/15</h5>
+			</div>
+		</div>
+	</div>
+</body>
