@@ -2,21 +2,73 @@
 <html> 
 <head>
 	<script>
-		//generate HP levels
-		var P1HP = hpdetermine();
-		var P2HP = hpdetermine();
-		var P3HP = hpdetermine();
-		var P4HP = hpdetermine();
-		//hp chart function
+		//IF. means in function
+		
+		//1.functions
+			//1.1dice (if required)
+			//1.2update
+		function update(){
+		//IF.add updates to displayed variables(xp, hp, sp, etc.)	
+		}
+			//1.3player actions
+		
+				//1.3.1heal
+		function heal(player){
+			//IF.check sp
+			//IF.check heal charts
+		}
+		
+				//1.3.2other
+		function other(player){
+			//IF.check "other" charts
+			//IF.check max sp
+			//IF.put up warning if not used to max?
+		}
+		
+				//1.3.3attack
+					//1.3.3.1choose target
+		function choosetarget(player){
+			//IF.add dropdown later (how? (take out player variable if needed))
+		}
+		
+					//1.3.3.1change variables (attack)
+		function attacktarget(attacker, target){
+			//IF.make sure to add if (sp > required sp) check
+			//IF.subtract SP
+			//IF.update
+		}
+		
+			//1.4generate charts
+				//1.4.1HP chart
 		function hpdetermine(level) {
 			return 25;
-			//add a level chart later
+			//IF.add a level to hp translation chart later
 		};
-		//test hp chart
+		
+				//1.4.2SP chart
+		function spdetermine(level) {
+			return 25;
+			//IF.add a level to sp translation chart later
+		};
+		
+		//1.-----
+		//1.end functions
+		//1.-----
+		
+		//2.troubleshooting, debuging, printing to console, other
+			//2.1test hp chart
 		console.log("P1HP: " + P1HP)
 		console.log("P1HP: " + P2HP)
 		console.log("P1HP: " + P3HP)
 		console.log("P1HP: " + P4HP)
+		
+		//3.other
+		//3.1generate HP based on level (add functions/input fields for level input at game start)
+		var P1HP = hpdetermine();
+		var P2HP = hpdetermine();
+		var P3HP = hpdetermine();
+		var P4HP = hpdetermine();
+		
 	</script>
 </head>
 <body>
@@ -38,7 +90,7 @@
 				<h5 style = "float: left;" align = "center">/15</h5>
 			</div>
 			<div style = "float: left; width: 100%;" align = "center">
-				<button type = "button" style = "background-color: black; color: white; width: 15%;">ATTACK</button>
+				<button type = "button" style = "background-color: black; color: white; width: 15%;" onSubmit = "JavaScript: choosetarget(P1)">ATTACK</button>
 				<button type = "button" style = "margin-left: 15%; background-color: black; color: white; width: 15%;">HEAL</button>
 				<button type = "button" style = "margin-left: 15%; background-color: black; color: white; width: 15%;">OTHER</button>
 			</div>
